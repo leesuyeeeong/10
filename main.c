@@ -1,18 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
-	int i = 10;
-	char c = 'a';
+void main(void) {
+	int i = 4; //300으로 변경해서도 해보기
 	
-	int *iptr;
-	char *cptr;
-	iptr = &i;
-	cptr = &c;
-
-	printf("i : %p\n%p (size:%i)\n", iptr, &i, sizeof(iptr));
-	printf("c : %p\n%p (size:%i)\n", cptr, &c, sizeof(cptr));
-	printf("iptr2 : %p, %i\n", iptr, *iptr);
+	int *pi = &i;
+	char *pc = &i;
+	
+	printf("%i, %i, %i\n", i, *pi, *pc);
 	
 	return 0;
 }
